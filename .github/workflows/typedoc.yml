@@ -27,8 +27,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Build typedoc
         run:
-          - npm install
-          - npx typedoc src/index.ts
+          - make docs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:

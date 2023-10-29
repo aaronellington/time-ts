@@ -4,7 +4,7 @@
 
 A time library for TypeScript.
 
-Docs: [Storybook](https://aaronellington.github.io/time-ts/)
+Documentation: [typedoc](https://aaronellington.github.io/time-ts/)
 
 npm package: [@aaronellington/time-ts](https://www.npmjs.com/package/@aaronellington/time-ts)
 

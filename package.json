@@ -1,6 +1,6 @@
 {
 	"name": "@aaronellington/time-ts",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A time library for TypeScript.",
 	"main": "src/index.ts",
 	"homepage": "https://github.com/aaronellington/time-ts#readme",

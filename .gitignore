@@ -9,6 +9,4 @@
 
 # Node
 /node_modules/
-
-# typedoc
 /docs/

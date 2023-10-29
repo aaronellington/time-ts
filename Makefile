@@ -1,4 +1,4 @@
-.PHONY: full build test test-npm lint lint-npm fix fix-npm watch watch-npm docs clean
+.PHONY: full build build-npm test test-npm lint lint-npm fix fix-npm watch watch-npm clean
 
 SHELL=/bin/bash -o pipefail
 $(shell git config core.hooksPath ops/git-hooks)
@@ -6,7 +6,11 @@ $(shell git config core.hooksPath ops/git-hooks)
 full: clean lint test build
 
 ## Build the project
-build:
+build: build-npm
+
+build-npm:
+	[ -d node_modules ] || npm install
+	npm run build
 
 ## Test the project
 test: test-npm
@@ -22,7 +26,6 @@ lint-npm:
 	[ -d node_modules ] || npm install
 	npm run lint
 
-
 ## Fix the project
 fix: fix-npm
 
@@ -30,9 +33,13 @@ fix-npm:
 	[ -d node_modules ] || npm install
 	npm run fix
 
-docs:
+## Watch the project
+watch: build-npm
+	make -j1 watch-npm
+
+watch-npm:
 	[ -d node_modules ] || npm install
-	npx typedoc src/index.ts
+	npm run watch
 
 ## Clean the project
 clean:

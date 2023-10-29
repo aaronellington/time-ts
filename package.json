@@ -1,0 +1,26 @@
+{
+	"name": "@aaronellington/time-ts",
+	"version": "0.0.2",
+	"description": "A time library for TypeScript.",
+	"main": "src/index.ts",
+	"homepage": "https://github.com/aaronellington/time-ts#readme",
+	"author": "Aaron Ellington",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/aaronellington/time-ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/aaronellington/time-ts/issues"
+	},
+	"scripts": {
+		"lint": "prettier --check . && eslint src --format unix && tsc --noEmit",
+		"fix": "prettier --write . && eslint src --fix",
+		"test": "echo hello there"
+	},
+	"devDependencies": {
+		"@typescript-eslint/eslint-plugin": "^6.9.0",
+		"eslint": "^8.52.0",
+		"prettier": "^3.0.3"
+	}
+}

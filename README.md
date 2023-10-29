@@ -2,7 +2,7 @@
 
 ![time-ts logo](./ops/images/time-ts.png)
 
-A time library for TypeScript. (Heavily inspired by the [Go time package](https://pkg.go.dev/time).)
+A time library for TypeScript. (Heavily inspired by the [Go time package](https://pkg.go.dev/time))
 
 Documentation: [typedoc](https://aaronellington.github.io/time-ts/)
 

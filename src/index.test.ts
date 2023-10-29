@@ -16,4 +16,10 @@ describe('Test the time Library', () => {
 		const expected = new time.Time(new Date(1000))
 		expect(actual).toStrictEqual(expected)
 	})
+
+	test('test Time.Since', () => {
+		const oneHourAgo = time.Now().Add(time.Hour * -1)
+		const actual = time.Since(oneHourAgo)
+		expect(actual).toBeGreaterThanOrEqual(time.Hour)
+	})
 })

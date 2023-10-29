@@ -5,20 +5,11 @@ export namespace time {
 	export const Minute: Duration = Second * 60
 	export const Hour: Duration = Minute * 60
 
-	export function Since(start: Time): Duration {
-		const now = Now()
-		return now.Sub(start)
-	}
-
-	export function Now(): Time {
-		return new Time(new Date())
-	}
-
 	export class Time {
 		public RawDate: Date
 
-		constructor(date: Date) {
-			this.RawDate = date
+		constructor(rawDate: Date) {
+			this.RawDate = rawDate
 		}
 
 		public Add(duration: Duration): Time {
@@ -34,5 +25,14 @@ export namespace time {
 
 			return dest - src
 		}
+	}
+
+	export function Now(): Time {
+		return new Time(new Date())
+	}
+
+	export function Since(start: Time): Duration {
+		const now = Now()
+		return start.Sub(now)
 	}
 }

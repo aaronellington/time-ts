@@ -19,9 +19,9 @@ npm i @aaronellington/time-ts
 - Duration
 
 ```typescript
-import { time } from "@aaronellington/time-ts"
+import { time } from '@aaronellington/time-ts'
 
 setTimeout(() => {
-	console.log("Five seconds have gone by")
+	console.log('Five seconds have gone by')
 }, time.Second * 5)
 ```

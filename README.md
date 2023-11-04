@@ -1,6 +1,6 @@
 # @aaronellington/time-ts
 
-![time-ts logo](./ops/images/time-ts.png)
+![time-ts logo](./media/images/time-ts.png)
 
 A time library for TypeScript. (Heavily inspired by the [Go time package](https://pkg.go.dev/time))
 
@@ -12,4 +12,16 @@ npm package: [@aaronellington/time-ts](https://www.npmjs.com/package/@aaronellin
 
 ```shell
 npm i @aaronellington/time-ts
+```
+
+## Examples
+
+- Duration
+
+```typescript
+import { time } from "@aaronellington/time-ts"
+
+setTimeout(() => {
+	console.log("Five seconds have gone by")
+}, time.Second * 5)
 ```

@@ -1,4 +1,8 @@
 {
 	"$schema": "https://typedoc.org/schema.json",
-	"entryPoints": ["./src/index.ts"]
+	"entryPoints": ["./src/index.ts"],
+	"media": "media",
+	"navigationLinks": {
+		"GitHub": "https://github.com/aaronellington/time-ts"
+	}
 }
